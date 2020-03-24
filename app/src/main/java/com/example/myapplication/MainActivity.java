@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -58,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClickRead(View view)
     {
-
+        Intent i = new Intent(MainActivity.this, ShowActivity.class);
+        startActivity(i);
     }
 }
